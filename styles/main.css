@@ -5,30 +5,38 @@ fonts::::
 */
 
 body{
+    display: grid;
     margin: 0;
     padding: 0;
-    height: 50%;
 }
 
 .page{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    position: absolute;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
     height: auto;
+    top: 60%;
+    bottom: 0;
     font-family: 'Inconsolata', monospace;
     text-align: center;
-    overflow: scroll;
     background: url(pattern2.png);
       }
 
 .tapbox{
-    grid-column: span 3 / 5;
-    margin: 10%;
     border: solid 3px;
     background: white;
 }
 
-.outline{
+.tb1{
+    grid-area: 1 / 2 / 2 / 5;
+}
+
+.tb2{
+
+}
+
+.tb3{
     outline: 10px solid #c4c4c4;
 }
 
