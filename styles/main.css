@@ -4,27 +4,31 @@ fonts::::
     font-family: 'Inconsolata', monospace;
 */
 
+body{
+    margin: 0;
+    padding: 0;
+    height: 50%;
+}
+
 .page{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 5% 15% 15% 15% 15% 15% 15% 5%;
+    width: 100%;
+    height: auto;
     font-family: 'Inconsolata', monospace;
+    text-align: center;
+    overflow: scroll;
+    background: url(pattern2.png);
       }
-}
 
 .tapbox{
-    border: 3px solid;
+    grid-column: span 3 / 5;
+    margin: 10%;
+    border: solid 3px;
+    background: white;
 }
 
-.tbox1{
-    grid-area: 1 / 1 / 7 / 2;
-}
-
-.tbox2{
-
-}
-
-.tbox3{
+.outline{
     outline: 10px solid #c4c4c4;
 }
 
