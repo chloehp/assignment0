@@ -1,3 +1,6 @@
+<!--This is the landing page for my website, it contains a correctly sized photo of me in the header, 
+several links to external sites, the link to the page that contains my 200 word report, and a nav 
+element with links to all associated files.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,49 +12,68 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Quicksand&display=swap" rel="stylesheet"> 
 </head>
 <body>
+<!--Below is the title and my picture that will display at the top of the screen. In the mobile version
+they are set vertically, the desktop version theyre set horizontally.-->
     <header>
-        <a href="landing.html"><img class="profilepic" src="images/shane.gif" alt="Photograph of me"></a>
+        <a href="landing.html"><img class="profilepic" src="images/me.jpg" alt="Photograph of me"></a>
         <a href="landing.html"><h1 class="profiletitle">CHLOE<br>HUGHES-<br>PENZER</h1></a>
     </header>
+<!--The main contents of the page is in a scrollable box in the middle of the screen,
+in the mobile site this takes up the lower half of the screen. -->
     <div class="container">
         <div class="page">
             <article class="tapbox tb1">
                 <p>Hi, I'm Chloe! I'm a IT student currently studying at UON.</p>
             </article>
+<!--Three links to external sites: GitHub, Twitter, and LinkedIn. The icons used for
+links are .svg vectors to keep the size of the file low and the quality high.
+
+The icon links also have titles so if the user doesn't know what the icon is they can hover
+the curser over it the title will say where the link will take them if they click it.
+
+I have set target _blank which will open the link in a new tab when clicked.-->
             <article class="tapbox tb2">
                 <a href="https://github.com/chloehp" target="_blank" title="Go to my GitHub"><img src="images/github.svg" alt="GitHub logo"></a>
                 <a href="https://twitter.com/HPChloe" target="_blank" title="Go to my Twitter"><img src="images/twitter.svg" alt="Twitter logo"></a>
                 <a href="https://www.linkedin.com/in/chloe-hp-358097198/" target="_blank" title="Go to my LinkedIn"><img src="images/linkd.svg" alt="LinkedIn logo"></a>
             </article>
+<!--Link to internal page that has my 200 word report on it. Target left to default because
+I would want the link to open in the same tab.-->
             <article class="tapbox tb3">
                 <a href="report.html"><p><b>My 200 word report</b></p></a>
             </article>
         </div>
     </div>
+<!--The footer just contains some details about this assignment and the site map-->
     <footer>
-        <article class="footel">
+        <article>
             <p>Chloe Hughes-Penzer</p>
         </article>
-        <article class="footel">
+        <article>
             <p>18411538</p>
         </article>
-        <article class="footel">
+        <article>
             <p>19/20 Web Dev (CSY1018-STD)</p>
         </article>
-        <article class="footel">
+        <article>
             <p>University of Northampton</p>
         </article>
+<!--The sitemap is set out as an unordered list in a navigation element, this contains links
+to both the pages of the site plus all the complimentary files for this assignment-->
         <nav class="sitemap">
             <ul>
-                <b>Site map and files:</b>
-                <li class="sm1">
+                <b>Site map and files:</b><li></li>
+                <li>
                     <a href="landing.html">landing.html</a>
                 </li>
-                <li class="sm2">
+                <li>
                     <a href="report.html">report.html</a>
                 </li>
-                <li class="sm3">
+                <li>
                     <a href="styles/main.css">styles/main.css</a>
+                </li>
+                <li>
+                    <a href="report.docx">report.docx</a>
                 </li>
             </ul>
         </nav>

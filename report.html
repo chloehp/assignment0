@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,50 +10,78 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Quicksand&display=swap" rel="stylesheet"> 
 </head>
 <body>
+<!--Below is the title and my picture that will display at the top of the screen. In the mobile version
+they are set vertically, the desktop version theyre set horizontally.-->
     <header>
-        <a href="landing.html"><img class="profilepic" src="images/shane.gif" alt="Photograph of me"></a>
+        <a href="landing.html"><img class="profilepic" src="images/me.jpg" alt="Photograph of me"></a>
         <a href="landing.html"><h1 class="profiletitle">CHLOE<br>HUGHES-<br>PENZER</h1></a>
     </header>
+<!--The main contents of the page is in a scrollable box in the middle of the screen,
+in the mobile site this takes up the lower half of the screen. -->
     <div class="container">
         <div class="page">
             <article class="tapbox tb4">
                 <a href="landing.html"><p>Back to landing</p></a>
             </article>
             <article class="tapbox tb5">
-                <p>Download report</p>
+                <a href="report.docx"><p>Download report.docx</p></a>
             </article>
             <article class="tapbox tb6">
-                <p>ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et tortor at risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget dolor morbi non arcu risus quis varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie at elementum eu facilisis sed odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar</p>
+                <p>
+                    <b>Web-Dev report</b><br><br>
+                    In the last almost two months of being in this module, I have learned so much about the process of web development. For me the first few weeks were a great refresher of HTML and CSS, in which I also learned some of the basics of Git and how to create a GitHub repository with VSC. In the last couple of weeks I’ve learned the grid and flex system for CSS which has been really helpful in this assignment. I’ve completed three of the class challenges but unfortunately I was off ill for the two last lectures. I've kept up with the online lectures.
+                    <br><br>
+                    I believe I have accomplished everything required for this assignment. Below is a screenshot of my wireframe design, made in Figma.
+                    <br><img src="images/screenshots/figma.jpg" alt="Screenshot of my figma design.">
+                    <br><br>
+                    By using flex and grid display properties, my site is designed to work just as well on a desktop as on mobile, this was tested through Firefox developer tools which allowed me to view the site through multiple different screen sizes.
+                    <br>In mobile versions of the site, the user would scroll on the main contents to look through it whilst the header remains at the top of the page, or scroll on the header to show or hide the footer.
+                    <br><img src="images/screenshots/mob1.jpg" alt="Screenshots showing off the site on a mobile size screen.">
+                    <img src="images/screenshots/mob2.jpg" alt="Screenshots showing off the site on a mobile size screen.">
+                    <img src="images/screenshots/mob3.jpg" alt="Screenshots showing off the site on a mobile size screen.">
+                    <img src="images/screenshots/mob4.jpg" alt="Screenshots showing off the site on a mobile size screen.">
+                    <br><br>
+                    The following screenshots show how my site looks and functions on various devices.<br>
+                    <img src="images/screenshots/mob1.jpg" alt="Screenshots of this site on a mobile size screen.">
+                    <img src="images/screenshots/screens1.jpg" alt="Screenshots of this site on a tablet size screen.">
+                    <img src="images/screenshots/screens2.jpg" alt="Screenshots of this site on a desktop screen.">
+                </p>
             </article>
         </div>
     </div>
-    <footer>
-        <article class="footel">
-            <p>Chloe Hughes-Penzer</p>
-        </article>
-        <article class="footel">
-            <p>18411538</p>
-        </article>
-        <article class="footel">
-            <p>19/20 Web Dev (CSY1018-STD)</p>
-        </article>
-        <article class="footel">
-            <p>University of Northampton</p>
-        </article>
-        <nav class="sitemap">
-            <ul>
-                <b>Site map and files:</b>
-                <li class="sm1">
-                    <a href="landing.html">landing.html</a>
-                </li>
-                <li class="sm2">
-                    <a href="report.html">report.html</a>
-                </li>
-                <li class="sm3">
-                    <a href="styles/main.css">styles/main.css</a>
-                </li>
-            </ul>
-        </nav>
-    </footer>
-</body>
-</html>
+    <!--The footer just contains some details about this assignment and the site map-->
+        <footer>
+            <article>
+                <p>Chloe Hughes-Penzer</p>
+            </article>
+            <article>
+                <p>18411538</p>
+            </article>
+            <article>
+                <p>19/20 Web Dev (CSY1018-STD)</p>
+            </article>
+            <article>
+                <p>University of Northampton</p>
+            </article>
+    <!--The sitemap is set out as an unordered list in a navigation element, this contains links
+    to both the pages of the site plus all the complimentary files for this assignment-->
+            <nav class="sitemap">
+                <ul>
+                    <b>Site map and files:</b><li></li>
+                    <li>
+                        <a href="landing.html">landing.html</a>
+                    </li>
+                    <li>
+                        <a href="report.html">report.html</a>
+                    </li>
+                    <li>
+                        <a href="styles/main.css">styles/main.css</a>
+                    </li>
+                    <li>
+                        <a href="report.docx">report.docx</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+    </html>
